@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Olive Yard Properties — exceptional real estate service across every stage of the property journey in Dubai.">
+  <title>Olive Yard Properties | Dubai Real Estate</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell" id="siteShell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-view="home" aria-label="Olive Yard Properties home">
+        <span class="brand-mark">OY</span>
+        <span class="brand-name">OLIVE YARD <em>PROPERTIES</em></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <button class="nav-link is-active" data-view="home">Home</button>
+        <button class="nav-link" data-view="about">About us</button>
+        <button class="nav-link" data-view="services">Services</button>
+        <button class="nav-link" data-view="gallery">Gallery</button>
+        <button class="nav-link nav-contact" data-view="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main class="experience" aria-live="polite">
+      <section class="scene is-active" id="home" data-scene="home" aria-labelledby="homeTitle">
+        <video class="scene-media background-video" id="homeVideo" src="assets/home.mp4" muted loop autoplay playsinline preload="auto" poster="assets/home-villa.png" aria-label="Contemporary luxury villa with a pool"></video>
+        <div class="scene-shade"></div>
+        <div class="home-copy scene-copy">
+          <p class="eyebrow">Dubai's premier real estate</p>
+          <h1 id="homeTitle">Discover your next<br><span>exceptional property.</span></h1>
+          <p class="lede">Exceptional service across every stage of your property journey in Dubai.</p>
+          <div class="actions">
+            <button class="primary-action" data-view="services">Explore our services <span>↗</span></button>
+            <button class="text-action" data-view="about">Meet Olive Yard <span>→</span></button>
+          </div>
+        </div>
+        <div class="scene-index"><span>01</span><i></i><b>Home</b></div>
+        <p class="motion-note">Move through the space</p>
+      </section>
+
+      <section class="scene" id="about" data-scene="about" aria-labelledby="aboutTitle">
+        <video class="scene-media background-video" id="aboutVideo" src="assets/about.mp4" muted loop playsinline preload="metadata" poster="assets/living-room.png" aria-label="Camera approaching the glass living room"></video>
+        <div class="scene-shade shade-left"></div>
+        <div class="scene-copy panel-copy">
+          <p class="eyebrow">About Olive Yard</p>
+          <h2 id="aboutTitle">Service beyond<br>the sale.</h2>
+          <p>Our Dubai-based team combines deep market knowledge with a client-first approach. We guide every decision with clarity, strategy and continued support long after completion.</p>
+          <div class="stat-row" aria-label="Studio highlights">
+            <div><strong>New developments</strong><span>Off-plan opportunities</span></div>
+            <div><strong>Established homes</strong><span>Ready properties</span></div>
+            <div><strong>Land & business</strong><span>Commercial spaces and plots</span></div>
+          </div>
+        </div>
+        <div class="scene-index"><span>02</span><i></i><b>About</b></div>
+      </section>
+
+      <section class="scene" id="services" data-scene="services" aria-labelledby="servicesTitle">
+        <video class="scene-media background-video" id="servicesVideo" src="assets/service.mp4" muted loop playsinline preload="metadata" poster="assets/kitchen.png" aria-label="Interior view moving toward the television"></video>
+        <div class="scene-shade shade-wide"></div>
+        <div class="services-layout">
+          <div class="scene-copy services-intro">
+            <p class="eyebrow">Property expertise</p>
+            <h2 id="servicesTitle">Real estate,<br>tailored to your goals.</h2>
+          </div>
+          <div class="service-list">
+            <article><span>Acquisition</span><div><h3>Buying & investment</h3><p>Tailored guidance across off-plan developments, ready homes, commercial spaces and plots.</p></div></article>
+            <article><span>Sales</span><div><h3>Selling a property</h3><p>Market-led advice and strategic positioning designed to protect and maximise your property's value.</p></div></article>
+            <article><span>Advisory</span><div><h3>Management & market analysis</h3><p>Reliable support, informed insights and service that continues beyond the transaction.</p></div></article>
+          </div>
+        </div>
+        <div class="scene-index"><span>03</span><i></i><b>Services</b></div>
+      </section>
+
+      <section class="scene gallery-scene" id="gallery" data-scene="gallery" aria-labelledby="galleryTitle">
+        <div class="gallery-ambient" aria-hidden="true"></div>
+        <div class="gallery-layout gallery-browser" id="galleryBrowser">
+          <div class="gallery-copy">
+            <p class="eyebrow">Featured residences</p>
+            <h2 id="galleryTitle">Step inside<br>before your visit.</h2>
+            <p>Select a residence to explore its exterior and principal interior spaces.</p>
+            <div class="gallery-details" aria-label="Property details">
+              <span><small>Type</small>Luxury villa</span>
+              <span><small>Collection</small>Signature homes</span>
+            </div>
+          </div>
+
+          <div class="property-grid" aria-label="Available residences">
+            <button class="property-card" type="button" data-property="property1" aria-label="Open Olive Grove Villa gallery">
+              <img src="assets/property-1-exterior.webp" alt="Olive Grove Villa exterior" loading="eager">
+              <span class="property-card-shade"></span>
+              <span class="property-card-content"><small>Signature collection</small><strong>Olive Grove Villa</strong><em>Explore <b>↗</b></em></span>
+            </button>
+            <button class="property-card" type="button" data-property="property2" aria-label="Open Palm Court Villa gallery">
+              <img src="assets/property-2-exterior.webp" alt="Palm Court Villa exterior" loading="lazy">
+              <span class="property-card-shade"></span>
+              <span class="property-card-content"><small>Private residence</small><strong>Palm Court Villa</strong><em>Explore <b>↗</b></em></span>
+            </button>
+            <button class="property-card" type="button" data-property="property3" aria-label="Open Horizon Residence gallery">
+              <img src="assets/property-3-exterior.webp" alt="Horizon Residence exterior" loading="lazy">
+              <span class="property-card-shade"></span>
+              <span class="property-card-content"><small>Contemporary living</small><strong>Horizon Residence</strong><em>Explore <b>↗</b></em></span>
+            </button>
+            <button class="property-card" type="button" data-property="property4" aria-label="Open Glass Garden Villa gallery">
+              <img src="assets/property-4-exterior.webp" alt="Glass Garden Villa exterior" loading="lazy">
+              <span class="property-card-shade"></span>
+              <span class="property-card-content"><small>Architectural collection</small><strong>Glass Garden Villa</strong><em>Explore <b>↗</b></em></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="property-view" id="propertyView" aria-hidden="true">
+          <div class="property-main">
+            <img id="propertyMainImage" src="assets/property-1-exterior.webp" alt="Olive Grove Villa exterior">
+            <div class="property-main-shade"></div>
+            <div class="property-caption"><small id="propertyImageType">Exterior</small><strong id="propertyTitle">Olive Grove Villa</strong></div>
+          </div>
+          <aside class="property-thumbnails" aria-label="Explore rooms">
+            <button class="property-thumb" type="button" data-room="living" data-label="Living room" aria-label="Show living room">
+              <img src="assets/property-1-living.webp" alt="Luxury villa living room"><span>Living room</span>
+            </button>
+            <button class="property-thumb" type="button" data-room="kitchen" data-label="Kitchen" aria-label="Show kitchen">
+              <img src="assets/property-1-kitchen.webp" alt="Luxury villa kitchen"><span>Kitchen</span>
+            </button>
+            <button class="property-thumb" type="button" data-room="bedroom" data-label="Bedroom" aria-label="Show bedroom">
+              <img src="assets/property-1-bedroom.webp" alt="Luxury villa master bedroom"><span>Bedroom</span>
+            </button>
+            <button class="property-thumb" type="button" data-room="bathroom" data-label="Bathroom" aria-label="Show bathroom">
+              <img src="assets/property-1-bathroom.webp" alt="Luxury villa bathroom"><span>Bathroom</span>
+            </button>
+          </aside>
+          <button class="property-back" id="closeProperty" type="button"><span>←</span> Back to residences</button>
+        </div>
+        <div class="scene-index"><span>04</span><i></i><b>Gallery</b></div>
+      </section>
+
+      <section class="scene contact-scene" id="contact" data-scene="contact" aria-labelledby="contactTitle">
+        <div class="tv-stage" id="tvStage">
+          <video class="scene-media contact-video" id="contactVideo" src="assets/contact.mp4" muted playsinline preload="auto" aria-label="Camera entering the living room and travelling into the television"></video>
+          <div class="scene-shade tv-shade"></div>
+          <div class="tv-instruction">
+            <span>Contact</span>
+            <p>Entering the screen</p>
+          </div>
+          <button class="skip-intro" id="skipIntro" type="button">Skip animation</button>
+        </div>
+
+        <div class="contact-panel" id="contactPanel">
+          <video class="contact-background-video" id="contactBackgroundVideo" src="assets/contact-background.mp4" muted loop playsinline preload="auto" aria-hidden="true"></video>
+          <div class="contact-background-shade" aria-hidden="true"></div>
+          <div class="contact-intro">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contactTitle">Let's find your<br>next property.</h2>
+            <a href="mailto:admin@oliveyardproperties.com">admin@oliveyardproperties.com</a>
+            <a href="https://wa.me/971556468756" target="_blank" rel="noopener noreferrer">WhatsApp · +971 55 646 8756</a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label>Name<input name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+            <label>Area of interest
+              <select name="project">
+                <option>Buying a property</option>
+                <option>Selling a property</option>
+                <option>Property management</option>
+                <option>Market analysis</option>
+                <option>Commercial property or plots</option>
+                <option>Other enquiry</option>
+              </select>
+            </label>
+            <label>Message<textarea name="message" required rows="3" placeholder="What are you looking for?"></textarea></label>
+            <button type="submit">Send enquiry <span>↗</span></button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+        <div class="scene-index contact-index"><span>05</span><i></i><b>Contact</b></div>
+      </section>
+    </main>
+
+    <div class="transition-curtain" id="transitionCurtain" aria-hidden="true"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
